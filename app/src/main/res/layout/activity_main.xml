@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/h"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:backgroundTint="#B4BCAD"
+                    android:drawableLeft="@drawable/baseline_home_24"
+                    android:text="주택"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/oft"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:backgroundTint="#B4BCAD"
+                    android:drawableLeft="@drawable/baseline_officetel_24"
+                    android:text="오피스텔"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/of"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:drawableLeft="@drawable/baseline_office_24"
+            android:text="사무실"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#B4BCAD"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/st"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:drawableLeft="@drawable/baseline_food_bank_24"
+            android:text="상가"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#B4BCAD"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/b"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:drawableLeft="@drawable/baseline_real_estate_agent_24"
+            android:text="건물"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="#B4BCAD"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="140dp"
+            android:layout_height="100dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" />
+
+        <Button
+            android:id="@+id/r"
+            android:layout_width="180dp"
+            android:layout_height="59dp"
+            android:backgroundTint="#B4BCAD"
+            android:text="의뢰 하기"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <ImageButton
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/call_btn_background"
+            android:cropToPadding="false"
+            android:onClick="onCallbtnClicked"
+            app:srcCompat="@drawable/baseline_call_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
